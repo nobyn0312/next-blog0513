@@ -1,10 +1,13 @@
-
+import 'globals.css'
+import Layout from "@/components/Layout";
 const { Component } = require("react");
 
 function MyApp({Component,pageProps}){
   return(
     <>
-      <Component {...pageProps}/>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   ) 
 }
