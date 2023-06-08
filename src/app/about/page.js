@@ -5,7 +5,7 @@ import PostBody from "components/post-body";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-column";
 import Image from 'next/image'
 import eyecatch from 'images/about.jpg'
-import Meta from "components/meta";
+// import Meta from "components/meta";
 import Head from "next/head";
 
 export default function About() {

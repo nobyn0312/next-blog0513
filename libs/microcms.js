@@ -1,9 +1,7 @@
-// pages/index.js
 import Link from "next/link";
-import { client } from "libs/client";
-import { GetStaticProps } from "next";
+import { client } from "../libs/client.js";
 
-export default function Blog({ blog }) {
+export default function Home({ blog }) {
   return (
     <div>
       <ul>
@@ -17,6 +15,7 @@ export default function Blog({ blog }) {
   );
 }
 
+// データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
 
